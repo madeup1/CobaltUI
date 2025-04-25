@@ -13,22 +13,10 @@ public class CobaltComponent
 
     public CobaltComponent(int width, int height, BiConsumer<CobaltComponent, CobaltRenderContext> consumer)
     {
-        this.x = x;
-        this.y = y;
         this.width = width;
         this.height = height;
 
         this.consumer = consumer;
-    }
-
-    public int getX()
-    {
-        return this.x;
-    }
-
-    public int getY()
-    {
-        return this.y;
     }
 
     public int getWidth()

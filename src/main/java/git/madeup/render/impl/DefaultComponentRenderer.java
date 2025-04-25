@@ -15,7 +15,7 @@ public class DefaultComponentRenderer extends ComponentRenderer
                 if (!setting.isVisible())
                     return;
 
-                ctx.drawRect(comp.getX(), comp.getY(), comp.getWidth(), comp.getHeight());
+                ctx.drawRect(0, 0, comp.getWidth(), comp.getHeight());
             });
         });
     }

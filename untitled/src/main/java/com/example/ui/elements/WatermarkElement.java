@@ -1,9 +1,11 @@
 package com.example.ui.elements;
 
-import git.madeup.elements.IElement;
-import git.madeup.input.keyboard.impl.KeyboardPressInput;
-import git.madeup.input.mouse.impl.MouseInput;
-import git.madeup.ui.CobaltUI;
+import cc.cobalt.elements.IElement;
+import cc.cobalt.input.keyboard.impl.KeyboardPressInput;
+import cc.cobalt.input.mouse.impl.MouseInput;
+import cc.cobalt.ui.CobaltUI;
+
+import static cc.cobalt.input.mouse.MouseInputType.Press;
 
 public class WatermarkElement implements IElement
 {

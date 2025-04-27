@@ -5,4 +5,5 @@ public interface IMouseInput
     MouseInputType getType();
     int getX();
     int getY();
+    int getMouseButton();
 }

@@ -23,4 +23,4 @@ plugins {
 }
 
 
-rootProject.name = "cobaltui"
+rootProject.name = "examplemod"

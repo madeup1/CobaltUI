@@ -3,16 +3,22 @@ package git.madeup.input.mouse.impl;
 import git.madeup.input.mouse.IMouseInput;
 import git.madeup.input.mouse.MouseInputType;
 
-public class MouseMoveInput implements IMouseInput
+public class MouseInput implements IMouseInput
 {
+    public static final int LEFT_CLICK = 0;
+    public static final int RIGHT_CLICK = 1;
+    public static final int MIDDLE_CLICK = 2;
+
     private final MouseInputType type;
     private final int x;
     private final int y;
+    private final int mouseButton;
 
-    public MouseMoveInput(int x, int y, MouseInputType type)
+    public MouseInput(int x, int y, int mouseButton, MouseInputType type)
     {
         this.x = x;
         this.y = y;
+        this.mouseButton = mouseButton;
         this.type = type;
     }
 
@@ -32,5 +38,11 @@ public class MouseMoveInput implements IMouseInput
     public int getY()
     {
         return this.y;
+    }
+
+    @Override
+    public int getMouseButton()
+    {
+        return this.mouseButton;
     }
 }

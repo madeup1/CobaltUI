@@ -9,7 +9,7 @@ public class CobaltComponent
     private int width;
     private int height;
 
-    private BiConsumer<CobaltComponent, CobaltRenderContext> consumer;
+    private final BiConsumer<CobaltComponent, CobaltRenderContext> consumer;
 
     public CobaltComponent(int width, int height, BiConsumer<CobaltComponent, CobaltRenderContext> consumer)
     {

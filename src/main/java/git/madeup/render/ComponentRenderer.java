@@ -2,7 +2,6 @@ package git.madeup.render;
 
 import git.madeup.components.IComponentBuilder;
 import git.madeup.settings.Setting;
-import jdk.internal.dynalink.support.ClassMap;
 
 import java.util.HashMap;
 
